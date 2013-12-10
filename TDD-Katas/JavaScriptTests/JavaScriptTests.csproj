@@ -53,12 +53,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="code.js" />
     <Content Include="Content\qunit.css" />
-    <Content Include="MyJSTests.js" />
     <Content Include="Scripts\qunit.js" />
+    <Content Include="Scripts\typings\qunit\qunit.d.ts" />
+    <Content Include="test.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="code.ts" />
+    <TypeScriptCompile Include="leapYearTests.ts" />
+    <TypeScriptCompile Include="leapYear.ts" />
+    <TypeScriptCompile Include="test.ts" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
