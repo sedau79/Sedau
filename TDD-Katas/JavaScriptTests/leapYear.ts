@@ -1,6 +1,6 @@
 class leapYearCalc {
 
-    static IsLeapYear(arg: number) {
+    static IsTruelyLeapYear(arg: number) {
 
         var divisbleBy4 = (arg % 4) == 0;
         var divisbleBy100 : boolean= (arg % 100) == 0;

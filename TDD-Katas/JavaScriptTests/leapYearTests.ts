@@ -9,7 +9,7 @@
 test("2001 is a typical common year", function () {
 
     var year: number = 2001;
-    var res: boolean = leapYearCalc.IsLeapYear(year);
+    var res: boolean = leapYearCalc.IsTruelyLeapYear(year);
   
     equal(res, false, "no leapYear expected");
 });
@@ -17,7 +17,7 @@ test("2001 is a typical common year", function () {
 test("1996 is a typical leap year", function () {
 
     var year: number = 1996;
-    var res: boolean = leapYearCalc.IsLeapYear(year);
+    var res: boolean = leapYearCalc.IsTruelyLeapYear(year);
 
     equal(res, true, "leapYear expected");
 });
@@ -25,7 +25,7 @@ test("1996 is a typical leap year", function () {
 test("2000 is an atypical leap year", function () {
 
     var year: number = 1900;
-    var res: boolean = leapYearCalc.IsLeapYear(year);
+    var res: boolean = leapYearCalc.IsTruelyLeapYear(year);
 
     equal(res, false, "no leapYear expected");
 });
@@ -33,7 +33,7 @@ test("2000 is an atypical leap year", function () {
 test("1900 is an atypical common year", function () {
 
     var year: number = 1900;
-    var res: boolean = leapYearCalc.IsLeapYear(year);
+    var res: boolean = leapYearCalc.IsTruelyLeapYear(year);
 
     equal(res, false, "no leapYear expected");
 });
